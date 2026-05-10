@@ -1,0 +1,26 @@
+{
+  "name": "finos",
+  "version": "1.0.0",
+  "description": "Multi-platform workspace app with real-time collaboration and AI-powered intelligence",
+  "private": false,
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter='./apps/*' dev",
+    "build": "pnpm --parallel build",
+    "test": "pnpm --parallel test",
+    "qa": "pnpm --filter './qa-playwright' test"
+  },
+  "keywords": [
+    "workspace",
+    "collaboration",
+    "ai",
+    "real-time",
+    "next.js",
+    "tauri",
+    "cloudflare-workers"
+  ],
+  "author": "DevCraftXCoder"
+}
