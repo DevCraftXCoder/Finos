@@ -62,7 +62,7 @@ Browser / Desktop ──┬──> Finos Web (Next.js 15, CF Workers)
 - Strongly-typed query results, zero stringly-typed columns
 
 **AI Integration**
-- Anthropic LLM API with extended thinking (5-min prompt cache TTL)
+- LLM API with extended thinking (5-min prompt cache TTL)
 - Streaming responses for long-running analysis
 - Structured output via Zod schemas
 
@@ -89,54 +89,6 @@ Browser / Desktop ──┬──> Finos Web (Next.js 15, CF Workers)
 - Playwright E2E test suite for live surfaces
 - P1+P2 security remediation (JWT forwarding, provenance warnings, structured logging)
 
-## Running This
-
-### Dev Server
-
-```bash
-# Install dependencies
-pnpm install
-
-# Start web app (localhost:3000)
-pnpm --filter finos-web dev
-
-# Start desktop app
-pnpm --filter finos-desktop dev
-
-# Start API (localhost:8787)
-pnpm --filter finos-api dev
-```
-
-### Type Checking
-
-```bash
-pnpm typecheck
-```
-
-### Testing
-
-```bash
-# Unit tests
-pnpm test
-
-# E2E tests (Playwright)
-pnpm qa
-```
-
-### Build
-
-```bash
-# Web production build
-pnpm --filter finos-web build
-
-# Desktop builds (platform-specific)
-pnpm --filter finos-desktop build
-```
-
-## Related Projects
-
-**[Reckon](https://github.com/turdpusher360/reckon)** — Complementary accounting/finance module, integrates with Finos workspace for financial tracking and reporting.
-
 ## Scale
 
 | Metric | Value |
@@ -151,3 +103,7 @@ pnpm --filter finos-desktop build
 ---
 
 Built with Next.js 15, Tauri 2.x, Hono, Cloudflare Workers, and Supabase. Designed for solo builders and small teams.
+
+---
+
+*Built by Frxncois — not open source.*
