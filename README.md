@@ -80,14 +80,14 @@ Browser / Desktop ──┬──> Finos Web (Next.js 15, CF Workers)
 
 ## Recent Additions (Last 30 Days)
 
+- Web ↔ desktop parity pass — 25 UI improvements: identical dashboard layout across Next.js and Tauri surfaces
+- Tax screen wired to finos-api, Settings nav, demo gate for unauthed users, CSP hardening
 - Shared state management layer for seamless web/desktop sync
 - Redesigned app layout with sidebar nav, live clock, and AI command bar
 - Replaced localStorage auth with Supabase SSR cookie-based sessions
 - Added signup/login flows with email verification
-- Logo + 8-icon set, 8 performance improvements
 - ESLint flat config (0 errors, full TS + React + Next.js rule coverage)
 - Playwright E2E test suite for live surfaces
-- P1+P2 security remediation (JWT forwarding, provenance warnings, structured logging)
 
 ## Scale
 
