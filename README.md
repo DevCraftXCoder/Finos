@@ -2,7 +2,7 @@
 
 **Multi-platform workspace app with real-time collaboration, Intelligence-driven intelligence, and seamless web/desktop sync.**
 
-> Finos is a production workspace platform built on a monorepo architecture spanning Next.js web, Tauri desktop, and edge API. Real-time state syncing between platforms, AI-augmented task intelligence, and typed SQL schema bridges enable teams to collaborate efficiently across devices.
+> Finos is a production workspace platform built on a monorepo architecture spanning Next.js web, Tauri desktop, and edge API. Real-time state syncing between platforms, automation-augmented task intelligence, and typed SQL schema bridges enable teams to collaborate efficiently across devices.
 
 ## Architecture
 
@@ -18,7 +18,7 @@ Browser / Desktop ──┬──> Finos Web (Next.js 15, CF Workers)
                    │
                    └──> Finos API (Hono, Cloudflare Workers)
                             ├─> SQL Bridge (typed views)
-                            ├─> AI Engine (LLM integration)
+                            ├─> Automation Engine (LLM integration)
                             └─> Intel Module (analytics)
 ```
 
@@ -32,7 +32,7 @@ Browser / Desktop ──┬──> Finos Web (Next.js 15, CF Workers)
 | **Backend (API)** | Hono, Cloudflare Workers | Edge API — no cold starts, globally distributed |
 | **Database** | Supabase (PostgreSQL) | Auth, state storage, real-time subscriptions |
 | **State Sync** | Custom layer | Web/desktop state synchronization, conflict resolution |
-| **AI Integration** | LLM API | Task intelligence, suggestions, analysis |
+| **Automation Integration** | LLM API | Task intelligence, suggestions, analysis |
 | **Type Safety** | TypeScript strict, Zod | End-to-end schema validation, typed SQL views |
 
 ## What's Built
@@ -61,14 +61,14 @@ Browser / Desktop ──┬──> Finos Web (Next.js 15, CF Workers)
 - Zod schemas for runtime validation
 - Strongly-typed query results, zero stringly-typed columns
 
-**AI Integration**
+**Automation Integration**
 - LLM API with extended thinking (5-min prompt cache TTL)
 - Streaming responses for long-running analysis
 - Structured output via Zod schemas
 
 **Design System**
 - Sidebar navigation + live clock widget
-- AI command bar (global search + action trigger)
+- automation command bar (global search + action trigger)
 - Dark-first aesthetic with red accent (#e94560)
 - Mobile-responsive with GlobalDock support
 
@@ -83,7 +83,7 @@ Browser / Desktop ──┬──> Finos Web (Next.js 15, CF Workers)
 - Tauri desktop app (Windows/macOS/Linux) with identical UX to web surface
 - Multi-platform state sync — real-time web ↔ desktop parity
 - Supabase auth integration with SSR cookie-based sessions
-- AI command bar with LLM integration and extended thinking
+- automation command bar with LLM integration and extended thinking
 - Tax forecasting screen wired to finos-api
 - Playwright E2E regression test suite
 - ESLint strict mode (0 errors, full TypeScript + React + Next.js coverage)
