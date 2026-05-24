@@ -1,6 +1,6 @@
 # Finos
 
-**Multi-platform workspace app with real-time collaboration, AI-powered intelligence, and seamless web/desktop sync.**
+**Multi-platform workspace app with real-time collaboration, Intelligence-driven intelligence, and seamless web/desktop sync.**
 
 > Finos is a production workspace platform built on a monorepo architecture spanning Next.js web, Tauri desktop, and edge API. Real-time state syncing between platforms, AI-augmented task intelligence, and typed SQL schema bridges enable teams to collaborate efficiently across devices.
 
